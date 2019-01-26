@@ -1,4 +1,3 @@
-# python3
 
 def max_pair_1(numbers):
     n = len(numbers)
