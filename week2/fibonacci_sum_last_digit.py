@@ -36,7 +36,14 @@ def get_fibonacci_last_digit_naive(n):
         return fin_number
 
 
+def fibonacci_sum_naive(n):
+    if get_fibonacci_last_digit_naive(n+2) == 0:
+        return 9
+    else:
+        last_digit = get_fibonacci_last_digit_naive(n+2)-1
+        return last_digit
+
 if __name__ == '__main__':
     input = sys.stdin.read()
     n = int(input)
-    print(get_fibonacci_last_digit_naive(n))
+    print(fibonacci_sum_naive(n))
